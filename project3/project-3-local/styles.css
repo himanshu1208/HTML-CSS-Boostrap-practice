@@ -1,0 +1,174 @@
+/* Global view */
+body {
+    font-family: 'Asap', sans-serif;
+    color: white;
+    background-color: #EBEBEB;
+}
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+.header-container {
+    background-color: rgb(60,60,60);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    min-height: 100px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    border:3px solid white;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+    
+    
+}
+/* nav {
+    text-align: right;
+} */
+
+.logo {
+    flex: 2;
+}
+
+.display-desktop {
+    display: none;
+}
+
+.col {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(43,226,147);
+}
+
+.col p {
+
+    font-size: 0.875rem;
+    padding: 20px 25px;
+}
+
+.col p::first-line {
+    font-weight: 700; 
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.myNavButton {
+    padding: 10px 25px;
+    border: 1px solid white;
+    margin: 0 10px;
+}
+
+.mob-wrapper {
+    display: none;
+}
+
+
+/* tablet view */
+@media (max-width:768px) {
+
+    .col {
+        width: 45%;
+    } 
+
+    .display-desktop {
+        display: block;
+    }
+
+    .logo {
+        padding: 40px 0;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .mob-nav {
+        display: none; 
+        position: absolute;
+    }
+
+    .myNavButton {
+       margin: 0 ;
+    }
+
+    .myButton {
+        display: block;
+        padding: 15px 30px;
+        background-color: rgb(43,226,147);
+        margin-left: -50px;
+        text-align: center;
+        border-bottom:1px solid rgb(60,60,60);
+
+
+    }
+
+    .header-container {
+        position: fixed;
+    }
+
+    .container {
+        padding-top: 130px;  
+    }
+
+    .mob-wrapper {
+        display: block;
+        margin-right: 40px;
+    }
+
+
+    
+}
+
+
+
+
+/* mobile view */
+@media (max-width:400px) {
+    .col {
+        width: 100%;
+    }
+    .header-container {
+        position: relative;
+    }
+    .container {
+        padding-top: 40px;  
+    }
+
+    
+    
+    
+}
